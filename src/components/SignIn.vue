@@ -1,5 +1,5 @@
 <template>
-  <div class="signin">
+  <div class="sign-in">
     <h2>{{ msg }}</h2>
     <el-form ref="form" label-width="120px">
       <el-form-item label="username">
@@ -21,11 +21,11 @@ import UsersApi from '../api/user.js'
 import router from '../router'
 
 export default {
-  name: 'signin',
+  name: 'sign-in',
   data () {
     return {
-      username: '',
-      password: '',
+      username: 'u5680353@iccs340.com',
+      password: 'u5680353',
       msg: 'Welcome to your personal feeds'
     }
   },

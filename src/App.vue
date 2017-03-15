@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header>
+      <side-bar-nav></side-bar-nav>
+    </header>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    SideBarNav: require('./SideBarNav')
+  }
 }
 </script>
 

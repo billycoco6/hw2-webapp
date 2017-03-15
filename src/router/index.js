@@ -18,20 +18,17 @@ export default new Router({
     {
       path: '/post',
       name: 'Post.index',
-      component: PostIndex,
-      meta: { requireAuth: true }
+      component: PostIndex
     },
     {
-      path: '/post/:post_id',
-      name: 'Post.index',
-      component: PostShow,
-      meta: { requireAuth: true }
+      path: '/post/:id',
+      name: 'Post.show',
+      component: PostShow
     },
     {
-      path: '/post',
-      name: 'Post.index',
-      component: PostNew,
-      meta: { requireAuth: true }
+      path: '/post/new',
+      name: 'Post.new',
+      component: PostNew
     },
     {
       path: '/register',

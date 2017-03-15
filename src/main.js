@@ -8,7 +8,7 @@ import Vuex from 'vuex'
 import Axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
-import UserApi from './api/user.js'
+// import UserApi from './api/user.js'
 
 Axios.defaults.baseURL = 'https://iccs340-vue-api-auth.herokuapp.com/'
 Axios.defaults.headers.common.Accept = 'application/json'
@@ -37,6 +37,8 @@ router.beforeEach((to, from, next) => {
   }
 })
 
+// UserApi.checkLoggedIn()
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -45,5 +47,3 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
-
-UserApi.checkLoggedIn()

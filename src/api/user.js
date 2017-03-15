@@ -18,7 +18,7 @@ export default {
     console.log(store)
     var signinParams = {
       user: {
-        username: username,
+        email: username,
         password: password
       }
     }
