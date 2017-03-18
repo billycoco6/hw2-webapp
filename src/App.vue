@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header>
+    <header v-if="$store.getters.loggedIn">
       <side-bar-nav></side-bar-nav>
     </header>
     <router-view></router-view>
