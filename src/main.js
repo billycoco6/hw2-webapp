@@ -10,7 +10,8 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 // import UserApi from './api/user.js'
 
-Axios.defaults.baseURL = 'https://iccs340-vue-api-auth.herokuapp.com/'
+// Axios.defaults.baseURL = 'https://iccs340-vue-api-auth.herokuapp.com/'
+Axios.defaults.baseURL = 'https://hw2-iccs340.herokuapp.com/'
 Axios.defaults.headers.common.Accept = 'application/json'
 Axios.defaults.withCredentials = true
 Axios.interceptors.request.use(

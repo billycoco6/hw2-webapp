@@ -24,8 +24,8 @@ export default {
   name: 'sign-in',
   data () {
     return {
-      username: 'u5680353@iccs340.com',
-      password: 'u5680353',
+      username: '',
+      password: '',
       msg: 'Welcome to your personal feeds'
     }
   },
